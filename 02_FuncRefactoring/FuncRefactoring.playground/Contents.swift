@@ -43,7 +43,8 @@ class TobeStep2 {
         }
         
         var isFlagged: Bool {
-            return value[STATUS_VALUE] == FLAGGED
+            let isFlagged = value[STATUS_VALUE] == FLAGGED
+            return isFlagged
         }
     }
     
