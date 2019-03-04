@@ -20,3 +20,38 @@ let sco = "X"
 let acoountGroup = "O"
 let bunchOfAccounts = "O"
 let Accounts = "O"
+
+// Class 명명 법
+// 클래스 이름과 객체 이름은 명사나 명사구가 적합하다.
+// 동사는 사용하지 않는다.
+class Customer { // O
+    
+}
+
+class WikiPage { // O
+    
+}
+
+class Account { // O
+    
+}
+
+class AddressParser { // O
+    
+}
+
+class Manager { // X
+    
+}
+
+class Processor { // X
+    
+}
+
+class Data { // X
+    
+}
+
+class Info { // X
+    
+}
