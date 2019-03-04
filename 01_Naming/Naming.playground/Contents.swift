@@ -24,34 +24,40 @@ let Accounts = "O"
 // Class 명명 법
 // 클래스 이름과 객체 이름은 명사나 명사구가 적합하다.
 // 동사는 사용하지 않는다.
-class Customer { // O
+class Customer {} // O
+class WikiPage {} // O
+class Account {} // O
+class AddressParser {} // O
+class Complex { // O
+    private var number: Float = 0
+    static func fromRealNumber(_ number: Float) -> Complex {
+        let complex = Complex()
+        complex.number = number
+        return complex
+    }
     
+    convenience init(_ number: Float) {
+        self.init()
+        self.number = number
+    }
 }
 
-class WikiPage { // O
-    
+class Manager {} // X
+class Processor {} // X
+class Data {} // X
+class Info {} // X
+
+// Function 명명 법
+func makeFunctionNamingAsIs() {
+    let fulcrumPoint = Complex.fromRealNumber(23.0) // X
 }
 
-class Account { // O
-    
+func makeFunctionNamingToBe() {
+    let fulcrumPoint = Complex(23.0) // O
 }
 
-class AddressParser { // O
-    
-}
+func kill() {} // O
+func whack() {} // X
 
-class Manager { // X
-    
-}
-
-class Processor { // X
-    
-}
-
-class Data { // X
-    
-}
-
-class Info { // X
-    
-}
+func abort() {} // O
+func eatMyShort() {} // X
